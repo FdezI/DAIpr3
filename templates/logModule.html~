@@ -1,0 +1,12 @@
+$def with(name, form)
+
+<div class="logo">
+	$if name == "anonymous":
+		<form name="main" method="POST"> 
+			$:form.render()
+		</form>
+
+		<a href="/register"><strong>Registrarse</strong></a>
+	$else:
+		Bienvenido, $name, <a href="/logout">logout</a>, <a href="/profile">perfil</a>
+</div>

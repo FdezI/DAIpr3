@@ -1,0 +1,6 @@
+$def with (form, submit="Registrar")
+
+<form name="main" method="POST"> 
+	$:form.render()
+	<input type="submit" value=$submit />
+</form>
